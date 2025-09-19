@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NekoButton } from 'nekona-ui'
+import { NekoButton } from 'nekona-ui-test'
 </script>
 
 <template>

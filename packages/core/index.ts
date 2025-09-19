@@ -1,6 +1,6 @@
 import { makeInstaller } from "@nekona-ui-test/utils";
 import components from "./components";
-import '@nekona-ui/theme/index.css'
+import '@nekona-ui-test/theme/index.css'
 
 const install = makeInstaller(components);
 
