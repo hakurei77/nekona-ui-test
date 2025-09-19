@@ -1,0 +1,38 @@
+{
+  "name": "nekona-ui-test",
+  "version": "1.0.1",
+  "description": "nekona-ui lib",
+  "author": "nekona",
+  "license": "MIT",
+  "packageManager": "pnpm@10.14.0",
+  "type": "module",
+  "main": "./dist/umd/index.umd.cjs",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/core/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/core/index.d.ts",
+      "import": "./dist/es/index.js",
+      "require": "./dist/umd/index.umd.cjs"
+    },
+    "./dist/": {
+      "import": "./dist/",
+      "require": "./dist/"
+    }
+  },
+  "sideEffects": [
+    "./dist/index.css"
+  ],
+  "scripts": {
+    "build": "run-s clean build-only move-style",
+    "build-only": "run-p build-umd build-es",
+    "build-umd": "vite build --config vite.umd.config.ts",
+    "build-es": "vite build --config vite.es.config.ts",
+    "move-style": "move-file dist/es/index.css dist/index.css",
+    "clean": "rimraf dist",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "18.1.2"
+  }
+}

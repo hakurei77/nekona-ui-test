@@ -1,0 +1,6 @@
+{
+  "name": "@nekona-ui-test/docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "packageManager": "pnpm@10.14.0"
+}

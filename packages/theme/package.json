@@ -1,0 +1,6 @@
+{
+  "name": "@nekona-ui-test/theme",
+  "version": "1.0.0",
+  "main": "index.css",
+  "packageManager": "pnpm@10.14.0"
+}
