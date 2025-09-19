@@ -1,7 +1,7 @@
 {
   "name": "nekona-ui-test",
   "version": "1.0.1",
-  "description": "nekona-ui lib",
+  "description": "nekona-ui-test lib",
   "author": "nekona",
   "license": "MIT",
   "packageManager": "pnpm@10.14.0",

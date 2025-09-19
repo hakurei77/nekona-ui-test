@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm --filter @nekona-ui/playground dev",
-    "build": "pnpm --filter nekona-ui build",
-    "release": "pnpm --filter nekona-ui release",
+    "dev": "pnpm --filter @nekona-ui-test/playground dev",
+    "build": "pnpm --filter nekona-ui-test build",
+    "release": "pnpm --filter nekona-ui-test release",
     "push": "run-s build release"
   },
   "keywords": [],
