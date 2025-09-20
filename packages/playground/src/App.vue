@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import { NekoButton } from 'nekona-ui-test'
+import { NekoButtonBarBg } from "nekona-ui-test"
 </script>
 
 <template>
-  <div>
-    <neko-button text="anniu"></neko-button>
+  <div class="a">
+    <neko-button-bar-bg></neko-button-bar-bg>
   </div>
 </template>
 
 <style lang='scss' scoped>
-
+.a {
+  width: 100%;
+}
 </style>

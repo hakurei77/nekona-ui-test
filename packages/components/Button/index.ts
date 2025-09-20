@@ -1,4 +1,4 @@
-import Button from './Button.vue'
+import _ from './Button.vue'
 import { withInstall } from '@nekona-ui-test/utils'
 
-export const NekoButton = withInstall(Button)
+export const NekoButton = withInstall(_)
