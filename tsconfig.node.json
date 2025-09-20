@@ -20,5 +20,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["packages/**/**.config.ts"],
+  "include": ["packages/**/**.config.ts", "packages/**/utils/**.ts"],
 }

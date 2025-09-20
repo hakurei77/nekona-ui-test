@@ -3,6 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import dts from "vite-plugin-dts"
 import { readdirSync } from "fs";
+import { afterBuildHandler } from "../utils/moveTypeFiles"
 
 function getDirectoriesSync(basePath: string) {
   const entries = readdirSync(basePath, { withFileTypes: true });
@@ -16,12 +17,15 @@ export default defineConfig({
     {
       outDir: "dist/types",
       tsconfigPath: "../../tsconfig.build.json",
+      afterBuild() {
+        afterBuildHandler(__dirname)
+      },
     }
   )],
   build: {
     outDir: "dist/es",
     lib: {
-      entry: resolve(__dirname, "./index.ts"),
+      entry: resolve(__dirname, "../index.ts"),
       name: "NekonaUI",
       fileName: "index",
       formats: ["es"],
@@ -36,9 +40,6 @@ export default defineConfig({
         manualChunks(id) {
           if (id.includes("node_modules")) {
             return "vendor"
-          }
-          if (id.includes("/packages/hooks")) {
-            return "hooks"
           }
           if (id.includes("/packages/utils")) {
             return "utils"
