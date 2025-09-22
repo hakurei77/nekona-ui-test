@@ -1,10 +1,12 @@
 import {
     NekoButton,
-    NekoButtonBarBg
+    NekoButtonBarBg,
+    NekoIcon
 } from '@nekona-ui-test/components'
 import type { Plugin } from 'vue'
 
 export default [
     NekoButton,
-    NekoButtonBarBg
+    NekoButtonBarBg,
+    NekoIcon
 ] as Plugin[]

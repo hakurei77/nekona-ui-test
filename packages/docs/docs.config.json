@@ -1,0 +1,33 @@
+{
+    "title": "NekoNa-ui",
+    "titleIcon": "logo",
+    "sidebar": [
+        {
+            "title": "D-文档书写说明",
+            "list":[
+                {
+                    "item": "D-文档标签",
+                    "path": "/docs"
+                }
+            ]
+        },
+        {
+            "title": "组件总览",
+            "list":[
+                {
+                    "item": "组件总览",
+                    "path": "/"
+                }
+            ]
+        },
+        {
+            "title": "基础组件",
+            "list":[
+                {
+                    "item": "Icon 图标",
+                    "path": "/icon"
+                }
+            ]
+        }
+    ]
+}

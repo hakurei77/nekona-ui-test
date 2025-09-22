@@ -1,0 +1,1 @@
+vue + ts + tailwindcss + pinia + vue-router

@@ -2,18 +2,17 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "composite": true,
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "removeComments": true
+    "baseUrl":"./",    //解析非相对模块的基地址，默认是当前目录
+    "paths":{    //路径映射，相对于baseUrl
+      "@/*" :["./src/*"],
+    }
   },
-  "include": [
-    "packages/playground/*.ts", 
-    "packages/playground/*.vue", 
-    "packages/playground/*.tsx"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

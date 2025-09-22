@@ -1,0 +1,5 @@
+# 忽略 page 目录下的所有 Vue 文件
+src/page/**/*.vue
+
+# 或者明确指定特定文件
+src/page/docs.vue
